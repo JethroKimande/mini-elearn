@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mini E-Learning</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="brand" href="#home" data-route="home">Mini E-Learn</a>
+				<nav aria-label="Primary navigation">
+					<ul class="nav-list">
+						<li><a href="#home" data-route="home">Home</a></li>
+						<li><a href="#courses" data-route="courses">Courses</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="container" id="main-content">
+			<section id="home-view" aria-labelledby="home-heading">
+				<header class="section-header">
+					<h1 id="home-heading">Explore Courses</h1>
+					<p class="section-subtitle">
+						Browse our curated lessons and track your learning progress.
+					</p>
+				</header>
+
+				<div id="course-grid" class="course-grid" role="list"></div>
+			</section>
+
+			<section id="course-view" aria-labelledby="course-heading" hidden>
+				<button class="back-button" type="button" data-route="home" aria-controls="home-view">
+					← Back to courses
+				</button>
+
+				<article class="course-detail" aria-live="polite">
+					<header>
+						<h1 id="course-heading"></h1>
+						<p class="course-description"></p>
+					</header>
+
+					<div class="progress-wrapper">
+						<div class="progress-label">
+							<span>Progress</span>
+							<span id="progress-percentage">0%</span>
+						</div>
+						<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+							<div class="progress-bar-fill"></div>
+						</div>
+					</div>
+
+					<section class="lessons" aria-labelledby="lessons-heading">
+						<h2 id="lessons-heading">Lessons</h2>
+						<ol class="lesson-list"></ol>
+					</section>
+
+					<div class="detail-actions">
+						<button class="complete-course" type="button">Mark as completed</button>
+					</div>
+				</article>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<p>&copy; <span id="year"></span> Mini E-Learn. Learn something new every day.</p>
+			</div>
+		</footer>
+
+		<template id="course-card-template">
+			<article class="course-card" role="listitem">
+				<img class="course-image" src="images/course-placeholder.svg" alt="" aria-hidden="true" />
+				<div class="course-content">
+					<h2 class="course-title"></h2>
+					<p class="course-summary"></p>
+				</div>
+				<div class="course-actions">
+					<button class="view-details" type="button">View Details</button>
+					<button class="mark-completed" type="button">Mark as completed</button>
+				</div>
+			</article>
+		</template>
+
+		<script src="scripts/main.js" defer></script>
+	</body>
+</html>
