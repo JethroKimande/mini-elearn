@@ -29,7 +29,7 @@ npm start
 ```
 
 This spins up `lite-server` on [http://localhost:3000](http://localhost:3000) and watches the `public` folder for changes.
-
+Also live at https://jethrokimande.github.io/mini-elearn/
 ## Project Structure
 
 ```
@@ -59,3 +59,4 @@ data/courses.json    # Example data set mirroring the in-memory structure
 ## License
 
 Released under the MIT License.
+
