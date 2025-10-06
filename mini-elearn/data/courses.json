@@ -1,0 +1,41 @@
+[
+	{
+		"id": "course-html-basics",
+		"name": "HTML Fundamentals",
+		"description": "Learn the building blocks of the web with semantic HTML and accessible layouts.",
+		"summary": "Understand the structure of web pages using semantic elements.",
+		"lessons": [
+			{ "title": "Introduction to HTML", "duration": "10 min", "completed": true },
+			{ "title": "Headings and Text", "duration": "12 min", "completed": false },
+			{ "title": "Links and Images", "duration": "15 min", "completed": false },
+			{ "title": "Lists and Tables", "duration": "18 min", "completed": false }
+		],
+		"completed": false
+	},
+	{
+		"id": "course-css-layouts",
+		"name": "Responsive CSS Layouts",
+		"description": "Design responsive layouts using modern CSS techniques such as Grid and Flexbox.",
+		"summary": "Craft flexible layouts that look great on every device.",
+		"lessons": [
+			{ "title": "CSS Box Model", "duration": "8 min", "completed": true },
+			{ "title": "Flexbox Essentials", "duration": "16 min", "completed": false },
+			{ "title": "Grid Layout", "duration": "22 min", "completed": false },
+			{ "title": "Media Queries", "duration": "12 min", "completed": false }
+		],
+		"completed": false
+	},
+	{
+		"id": "course-js-interactivity",
+		"name": "JavaScript Interactivity",
+		"description": "Enhance user experience with dynamic, interactive features using vanilla JavaScript.",
+		"summary": "Add logic and interactivity to bring your interfaces to life.",
+		"lessons": [
+			{ "title": "Variables and Data Types", "duration": "14 min", "completed": true },
+			{ "title": "Functions and Events", "duration": "18 min", "completed": true },
+			{ "title": "DOM Manipulation", "duration": "20 min", "completed": false },
+			{ "title": "State Management", "duration": "15 min", "completed": false }
+		],
+		"completed": false
+	}
+]
